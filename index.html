@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza House - Menú y Pedidos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-warning" href="#">🍕 Pizza House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                
+                <button class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#modalAccion">Reservar Mesa</button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <header class="container-fluid bg-danger text-white text-center py-5">
+        <h1 class="display-4 fw-bold">Las Mejores Pizzas Artesanales</h1>
+        <p class="lead">100% ingredientes frescos, masa casera y sabor inigualable.</p>
+        <a href="#menu" class="btn btn-warning btn-lg fw-bold text-dark">Ver Menú</a>
+    </header>
+
+    
+    <main id="menu" class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Nuestro Menú Destacado</h2>
+        
+        
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0 bg-light">
+                    
+                    <img src="imagenes/margaritaa.jpg" class="card-img-top" alt="Margherita" style="height: 180px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-danger">Pizza Margherita</h5>
+                        <p class="card-text">Masa casera, salsa de tomate, mozzarella fresca y hojas de albahaca.</p>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalMargherita">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0 bg-light">
+                    <img src="imagenes/pepperonii.png" class="card-img-top" alt="Pepperoni" style="height: 180px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-danger">Pizza Pepperoni</h5>
+                        <p class="card-text">Doble porción de pepperoni, queso mozzarella y orégano.</p>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalPepperoni">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0 bg-light">
+                    <img src="imagenes/hawaianaaa.jpeg" class="card-img-top" alt="Hawaiana" style="height: 180px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-danger">Pizza Hawaiana</h5>
+                        <p class="card-text">Masa casera, salsa de tomate, mozzarella fresca, jamón y piña fresca.</p>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalHawaiana">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm border-0 bg-light">
+                    <img src="imagenes/vegetarianaa.jpg" class="card-img-top" alt="Vegetariana" style="height: 180px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold text-danger">Pizza Vegetariana</h5>
+                        <p class="card-text">Masa casera, salsa de tomate, mozzarella fresca y vegetales asados.</p>
+                        <button class="btn btn-dark mt-auto" data-bs-toggle="modal" data-bs-target="#modalVegetariana">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <footer id="contacto" class="container-fluid bg-dark text-white py-5 border-top border-secondary mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                
+                
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-warning mb-3">🍕 Pizza House</h5>
+                    <p class="text-light small">Las mejores pizzas artesanales hechas 100% al momento con ingredientes frescos.</p>
+                </div>
+
+                
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-warning mb-3">Contáctanos</h5>
+                    <ul class="list-unstyled text-light small">
+                        <li class="mb-2">📞 <strong>Teléfono:</strong> +58 412-7315316</li>
+                        <li class="mb-2">📍 <strong>Dirección:</strong> Av. Principal, Local 4, Valencia</li>
+                        <li class="mb-2">✉️ <strong>Correo:</strong> pedidos@pizzahouse.com</li>
+                    </ul>
+                </div>
+
+    
+            </div>
+            <hr class="border-secondary my-4">
+            <p class="text-center text-secondary small mb-0">© 2026 Pizza House. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+
+
+    <div class="modal fade" id="modalAccion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Reservar una Mesa</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Cantidad de personas</label>
+                            <input type="number" class="form-control" placeholder="Ej. 4" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Hora de reserva</label>
+                            <input type="time" class="form-control" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-warning fw-bold" data-bs-dismiss="modal">Confirmar Reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="modal fade" id="modalMargherita" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Pizza Margherita - Detalles</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Clásica italiana horneada a la piedra con albahaca fresca importada, tomates naturales de la huerta y aceite de oliva virgen extra.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="modalPepperoni" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Pizza Pepperoni - Detalles</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Cargada con abundante pepperoni artesanal ligeramente picante, doble capa de queso mozzarella fundido y un toque especial de orégano.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="modalHawaiana" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Pizza Hawaiana - Detalles</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>La combinación perfecta entre lo dulce de la piña fresca seleccionada y lo jugoso del jamón ahumado de primera calidad sobre salsa de la casa.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="modalVegetariana" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Pizza Vegetariana - Detalles</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Selección del huerto con pimientos asados al carbón, champiñones frescos fileteados, cebolla morada y aceitunas negras sobre base ligera.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
